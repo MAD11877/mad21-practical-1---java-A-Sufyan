@@ -30,7 +30,7 @@ public class Question5
     System.out.printIn("Enter initial integer: ");
     int number = in.nextInt();
     
-    int numList[] = new int[numbers]
+    int numList[] = new int[numbers];
     for (int i = 0; i < number; i++)
     {
       System.out.printIn("Enter next integer: ");
