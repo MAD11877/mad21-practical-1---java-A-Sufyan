@@ -29,7 +29,7 @@ public class Question5
     Scanner in = new Scanner(System.in);
     int number = in.nextInt();
     
-    int numList[];
+    int numList[] = new int[number];
     for (int i = 0; i < number; i++)
     {
       numList[i] = in.nextInt();
@@ -53,7 +53,7 @@ public class Question5
       if (count > highestNum)
       {
         highestNum = count;
-        mode = numList[k];
+        mode = numList[j];
       }
       else
       {
