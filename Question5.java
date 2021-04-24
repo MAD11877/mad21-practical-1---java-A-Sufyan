@@ -27,6 +27,40 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int number = in.nextInt();
     
+    int numList[] = new int[number];
+    for (int i = 0; i < number; i++)
+    {
+      numList[i] = in.nextInt();
+    }
+    int highestNum = 0;
+    int mode = 0;
+    for (int j = 0; j < numList.length; j++)
+    {
+      int count = 0;
+      for(int k = 0; k <numList.length; k++)
+      {
+        if (numList[j] == numList[k])
+        {
+          count++;
+        }
+        else
+        {
+          continue;
+        }
+      }
+      if (count > highestNum)
+      {
+        highestNum = count;
+        mode = numList[j];
+      }
+      else
+      {
+        continue;
+      }
+    }
+    
+    System.out.println(mode);
   }
 }
