@@ -27,13 +27,11 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter initial integer: ");
     int number = in.nextInt();
     
     int numList[] = new int[numbers];
     for (int i = 0; i < number; i++)
     {
-      System.out.println("Enter next integer: ");
       numList[i] = in.nextInt();
     }
     int highestNum = 0;
